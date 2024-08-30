@@ -4,9 +4,7 @@ require('dotenv').config();
 
 const SUBREDDIT_OPTION_NAME = 'subreddit';
 
-
 const getRandomSubreddit = async () => {
-  //wrap this in a try catch?
   const res = await axios.get(`${process.env.REDDIT_BASE_URL}/subreddits/.json`);
   
   const subreddits = res?.data?.data?.children || [];
@@ -16,7 +14,6 @@ const getRandomSubreddit = async () => {
 
 
 const getRandomSubredditTopPost = async (subreddit) => {
-  //wrap this in a try catch?
   const res = await axios.get(`${process.env.REDDIT_BASE_URL}/r/${subreddit}/top/.json`);
   
   const topPosts = res?.data?.data?.children || [];
