@@ -1,0 +1,11 @@
+{
+  "name": "discord-reddit-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that randomly pulls a top 25 funny post",
+  "main": "bot.js",
+  "scripts": {},
+  "dependencies": {
+    "axios": "^1.7.5",
+    "discord.js": "^14.15.3"
+  }
+}
