@@ -37,7 +37,7 @@ const setUpDiscordClientEventHandlers = () => {
     console.log(`Logged in as ${readyClient.user.tag}!`);
   });
 
-  discord.once(Events.InteractionCreate, async (interaction) => {
+  discord.on(Events.InteractionCreate, async (interaction) => {
     if (!interaction.isChatInputCommand()) return;
   
     const command = interaction.client.commands.get(interaction.commandName);
@@ -66,6 +66,6 @@ const setUpDiscordClient = () => {
   discord.login(process.env.DISCORD_TOKEN);
 };
 
-(async () => {
+(() => {
   setUpDiscordClient();
 })();
