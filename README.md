@@ -1,0 +1,10 @@
+# Environment File (.env)
+REDDIT_BASE_URL=''
+
+SUBREDDIT_NAME=''
+
+DISCORD_TOKEN=''
+
+DISCORD_CLIENTID=''
+
+DISCORD_GUILDID=''
